@@ -1,4 +1,4 @@
----
+
 # Django Online Course Platform
 
 This project is a dynamic online course platform built with Django, offering a comprehensive solution for managing and delivering educational content. It features a robust user authentication system, fundamental user profiles, an integrated blog with commenting functionality, and a powerful API for extended capabilities.
