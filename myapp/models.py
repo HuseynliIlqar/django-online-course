@@ -122,7 +122,11 @@ class CourseRegistration(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phone = models.CharField(max_length=15)
     experience = models.CharField(max_length=20, choices=EXPERIENCE_CHOICES, default="təcrübəsiz")
-    profile_picture = models.ImageField(upload_to='profile_pictures/', null=True, blank=True, default='default.jpg')
+    profile_picture = models.ImageField(
+        upload_to='profile_pictures/',
+        null=True, blank=True,
+        default='profile_pictures/default_profile.png'
+    )
     bio = models.CharField(max_length=15, blank=True, null=True)
     last_applied = models.DateTimeField(null=True, blank=True)
 

@@ -4,7 +4,7 @@
 {% block title %}Profil Səhifəsi{% endblock %}
 
 {% block content %}
-<div class="container py-3">  <!-- py-5 əvəzinə py-3 -->
+<div class="container py-3">
     {% if messages %}
         {% for message in messages %}
             {% if message.tags == 'success' %}
@@ -25,19 +25,7 @@
 
     <div class="row align-items-center">
         <div class="col-md-3 text-center">
-            {% if course_registration.profile_picture %}
-                <img
-                  class="profile-img"
-                  src="{{ course_registration.profile_picture.url }}"
-                  alt="{{ user.username }} Profil Şəkli"
-                >
-            {% else %}
-                <img
-                  class="profile-img"
-                  src="{% static 'images/default_profile.png' %}"
-                  alt="Default Profile"
-                >
-            {% endif %}
+            <img class="profile-img" src="{{ course_registration.profile_picture.url }}"alt="{{ user.username }} Profil Şəkli">
         </div>
         <div class="col-md-9">
             <div class="d-flex align-items-center justify-content-between">
