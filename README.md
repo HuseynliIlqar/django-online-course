@@ -33,6 +33,12 @@ To get a copy of the project up and running on your local machine for developmen
 * pip (Python package installer)
 * Git
 
+## 🚀 Live Demo
+
+You can try the live version of the project here:
+
+👉 [http://13.60.32.216/en/](http://13.60.32.216/en/)
+
 ### Installation
 
 1.  **Clone the repository:**
